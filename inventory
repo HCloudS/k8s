@@ -1,7 +1,7 @@
 # hostname and ip, add all needed machines
-k8s-node-01 ansible_ssh_host=10.0.0.201 ansible_ssh_port={{ssh.port}}
-k8s-node-02 ansible_ssh_host=10.0.0.202 ansible_ssh_port={{ssh.port}}
-k8s-node-03 ansible_ssh_host=10.0.0.203 ansible_ssh_port={{ssh.port}}
+k8s-node-01 ansible_ssh_host=10.0.0.201 ansible_ssh_port={{ssh.port}} ansible_ssh_user=bdp
+k8s-node-02 ansible_ssh_host=10.0.0.202 ansible_ssh_port={{ssh.port}} ansible_ssh_user=bdp
+k8s-node-03 ansible_ssh_host=10.0.0.203 ansible_ssh_port={{ssh.port}} ansible_ssh_user=bdp
 
 # all machines need to be initialized
 [node]
